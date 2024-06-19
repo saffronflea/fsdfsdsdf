@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta here -->
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Copy Clipboard (Midterm Exam)</title>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="navbar">
+      <nav class="bg-gray-800"  style="position: sticky;">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-20 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex flex-shrink-0 items-center">
+                <img class="h-8 w-auto" src="https://www.networkrenderandpaint.com.au/static/img/NRP.svg" alt="Your Company">
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">About</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Download</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Services</a>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">About</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Download</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Services</a>
+          </div>
+        </div>
+      </nav>
+    </section>  
+
+    <section id="hero">
+      <div class="mb-40 section-container">
+        <img src="https://cff2.earth.com/uploads/2018/09/10140159/Rice-farming-has-a-surprisingly-harmful-environmental-impact-960x640.jpg" alt="" class="mx-auto w-xxl" />
+
+        <h1 class="mt-16 font-bold text-2xl">Agricultural  Program By</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmr1zK1nUYt6Mxj2839e0zgWtSEtrwvU7Iog&s" class="w-md h-md mx-auto mt-16 mb-16" alt="">
+
+        <h2 class="mt-16 font-bold text-2xl">Welcome in Rice Farms Seminar</h2>
+        <p class="mb-10 mt-8 text-xl section-content text-black">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+          iaculis tortor et nibh egestas, vel aliquam massa venenatis. Sed ante
+          mi, consectetur a mauris a, congue consectetur lacus. Suspendisse ac
+          mauris vulputate, viverra quam nec, commodo ante.
+        </p>
+        <!-- Button Container -->
+        <div class="button-container">
+          <a href="#" class="p-4 px-8 duration-200 rounded-full shadow-lg bg-gray-800 hover:opacity-80" > About </a>
+          <a  href="#" class="p-4 px-8 duration-200 rounded-full shadow-lg bg-gray-800 hover:opacity-80" > Contact </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Snippets Section -->
+
+    <!-- Features Section -->
+    <section id="features">
+      <div class="my-20 section-container">
+        <div class="relative flex flex-col md:flex-row md:space-x-32">
+          <!-- Image -->
+          <div class="md:w-1/2">
+            <img
+              src="https://www.ewg.org/sites/default/files/styles/wide_standard_xl/public/2023-10/RiceCropBlog.jpg?h=2e181f1f&itok=dgIuzrRT"
+              alt=""
+              class="md:absolute top-0 right-[50%]"
+            />
+          </div>
+
+          <!-- Items Container -->
+          <div
+            class="flex flex-col mt-16 space-y-12 text-xl md:w-1/2 md:mb-60 md:text-left md:p-6"
+          >
+          <h2 class="font-bold text-2xl">TYPES OF RICE</h2>
+            <!-- Item 1 -->
+            <div>
+              <h3 class="mb-10 mt-2 flex-col text-xl text-black">Rice is a staple in any kitchen, and with so many different types, it lends itself to an endless number of recipes. Each type of rice has its own taste, texture, and unique properties that work best in different applications. </h3>
+              <button class="border-solid border-gray-700 rounded-xl bg-gray-700">
+                <a href="#">READ MORE</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-20 section-container">
+        <div class="relative flex flex-col md:flex-row md:space-x-32">
+          <!-- Image -->
+          <div class="md:w-1/2">
+            <img
+              src="https://www.ewg.org/sites/default/files/styles/wide_standard_xl/public/2023-10/RiceCropBlog.jpg?h=2e181f1f&itok=dgIuzrRT"
+              alt=""
+              class="md:absolute top-0 left-[50%]"
+            />
+
+          </div>
+
+          <!-- Items Container -->
+          <div
+            class=" mt-16 space-y-12 text-xl md:w-1/2 md:mb-60 md:text-left md:p-6"
+          >
+          <h2 class="font-bold text-2xl">TYPES OF RICE</h2>
+            <!-- Item 1 -->
+            <div>
+              <h3 class="mb-10 mt-2 flex-col text-xl text-black">Rice is a staple in any kitchen, and with so many different types, it lends itself to an endless number of recipes. Each type of rice has its own taste, texture, and unique properties that work best in different applications. </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Access Anywhere Section -->
+    <section id="access">
+      <div class="my-20 section-container">
+        <p>Clipboard accessibility on the go</p>
+        <p class="mb-24 text-xl section-content">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo,
+          blanditiis debitis ut corrupti itaque rem voluptatem incidunt
+          assumenda modi officia.
+        </p>
+
+        <img src="images/image-devices.png" alt="" class="mx-auto" />
+      </div>
+    </section>
+
+    <!-- Supercharge Section -->
+    <section id="supercharge">
+      <div class="my-20 section-container">
+        <p>Supercharge your workflow</p>
+        <p class="mb-16 text-xl section-content">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </p>
+        <!-- Items Container -->
+        <div
+          class="flex flex-col items-center justify-between space-y-16 md:flex-row md:space-y-0 md:space-x-12"
+        >
+          <!-- Item 1 -->
+          <div class="flex flex-col items-center space-y-5">
+            <img src="images/icon-blacklist.svg" alt="" class="mb-6" />
+            <p>Create Blacklists</p>
+            <p class="max-w-md text-grayishBlue">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic,
+              voluptate!
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="flex flex-col items-center space-y-5">
+            <img src="images/icon-text.svg" alt="" class="mb-6" />
+            <p>Plain Text Snippets</p>
+            <p class="max-w-md text-grayishBlue">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+              totam.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="flex flex-col items-center space-y-5">
+            <img src="images/icon-preview.svg" alt="" class="mb-6" />
+            <p>Sneak Preview</p>
+            <p class="max-w-md text-grayishBlue">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+              porro.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references">
+      <div
+        class="flex flex-col items-center justify-between max-w-6xl px-10 mx-auto space-y-16 my-44 md:flex-row md:space-y-0"
+      >
+        <img src="images/logo-google.png" alt="" />
+        <img src="images/logo-ibm.png" alt="" />
+        <img src="images/logo-microsoft.png" alt="" />
+        <img src="images/logo-hp.png" alt="" />
+        <img src="images/logo-vector-graphics.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Bottom CTA Section -->
+    <section id="bottom">
+      <div class="my-20 section-container">
+        <p>Clipboard for iOS and MacOS</p>
+        <p class="mb-10 text-xl section-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae
+          iure voluptatem saepe asperiores voluptates voluptatibus esse
+          provident corporis impedit neque, quidem libero dolor placeat.
+        </p>
+
+        <!-- Button Container -->
+        <div class="button-container">
+          <a
+            href="#"
+            class="p-4 px-8 duration-200 rounded-full shadow-lg bg-strongCyan hover:opacity-80"
+          >
+            Download for iOS
+          </a>
+          <a
+            href="#"
+            class="p-4 px-8 duration-200 rounded-full shadow-lg bg-lightBlue hover:opacity-80"
+          >
+            Download for Mac
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-50">
+      <div class="section-container">
+        <div class="flex flex-col items-center justify-between md:flex-row">
+          <!-- Image -->
+          <img src="images/logo.svg" alt="" class="scale-50" />
+          <!-- Container for Menus & Social -->
+          <div
+            class="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-grayishBlue"
+          >
+            <!-- Menus -->
+            <div
+              class="flex flex-col space-y-4 md:flex-row md:ml-24 md:space-x-24 md:space-y-0"
+            >
+              <!-- Menu 1 -->
+              <div class="flex flex-col space-y-4 text-center md:text-left">
+                <div><a href="#" class="hover:text-strongCyan">FAQs</a></div>
+                <div>
+                  <a href="#" class="hover:text-strongCyan">Contact Us</a>
+                </div>
+              </div>
+              <!-- Menu 2 -->
+              <div class="flex flex-col space-y-4 text-center md:text-left">
+                <div>
+                  <a href="#" class="hover:text-strongCyan">Privacy Policy</a>
+                </div>
+                <div>
+                  <a href="#" class="hover:text-strongCyan">Press Kit</a>
+                </div>
+              </div>
+              <!-- Menu 3 -->
+              <div class="flex flex-col space-y-4 text-center md:text-left">
+                <div>
+                  <a href="#" class="hover:text-strongCyan">Install Guide</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex justify-between w-32 py-1">
+              <a href="#"
+                ><img
+                  src="images/icon-facebook.svg"
+                  alt=""
+                  class="duration-200 ficon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="images/icon-twitter.svg"
+                  alt=""
+                  class="duration-200 ficon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="images/icon-instagram.svg"
+                  alt=""
+                  class="duration-200 ficon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
